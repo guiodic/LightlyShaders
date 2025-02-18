@@ -14,15 +14,6 @@
 
  ![default](https://github.com/a-parhom/LightlyShaders/blob/plasma6/screenshot.png)
 
-# Warning:
-
-**This is a work in progress branch!**
-It may crash, contain new bugs, require installation of additional development packages to compile or not compile for you at all!
-
-To build on Plasma 6 RC1 you may have to download **effect/xcb.h** header manually (see [related bugreport](https://bugs.kde.org/show_bug.cgi?id=479584)).
-
-This branch is expected to work with any window decoration and theme.
-
 # Dependencies:
  
 Plasma >= 6.0.
