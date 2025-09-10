@@ -14,3 +14,5 @@ target_link_libraries(kwin_lightlyshaders_blur_config
 )
 
 install(TARGETS kwin_lightlyshaders_blur_config DESTINATION ${KDE_INSTALL_PLUGINDIR}/kwin/effects/configs)
+
+install(TARGETS kwin_lightlyshaders_blur_config DESTINATION ${KDE_INSTALL_PLUGINDIR}/kwin-x11/effects/configs)
