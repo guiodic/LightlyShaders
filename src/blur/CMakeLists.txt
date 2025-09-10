@@ -12,7 +12,8 @@ kconfig_add_kcfg_files(lightlyshaders_blur_SOURCES
 
 add_library(lightlyshaders_blur MODULE ${lightlyshaders_blur_SOURCES})
 target_link_libraries(lightlyshaders_blur PRIVATE
-    KWin::kwin
+ 
+    KWinX11::kwin
 
     KF6::ConfigGui
     PRIVATE XCB::XCB
@@ -21,4 +22,4 @@ target_link_libraries(lightlyshaders_blur PRIVATE
     lshelper
 )
 
-install(TARGETS lightlyshaders_blur DESTINATION ${KDE_INSTALL_PLUGINDIR}/kwin/effects/plugins)
+install(TARGETS lightlyshaders_blur DESTINATION ${KDE_INSTALL_PLUGINDIR}/kwin-x11/effects/plugins)
