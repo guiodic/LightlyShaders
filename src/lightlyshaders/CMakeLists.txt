@@ -19,7 +19,7 @@ target_link_libraries(${LIGHTLYSHADERS}
     Qt6::Gui
     Qt6::DBus
 
-    KWin::kwin
+    KWinX11::kwin
     epoxy::epoxy
     GL
 
@@ -33,5 +33,4 @@ target_link_libraries(${LIGHTLYSHADERS}
     lshelper
 )
 
-
-install(TARGETS ${LIGHTLYSHADERS} DESTINATION ${KDE_INSTALL_PLUGINDIR}/kwin/effects/plugins)
+install(TARGETS ${LIGHTLYSHADERS} DESTINATION ${KDE_INSTALL_PLUGINDIR}/kwin-x11/effects/plugins)
