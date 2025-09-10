@@ -9,7 +9,7 @@ qt_add_dbus_interface(kwin_lightlyshaders_config_SOURCES ${KWIN_EFFECTS_INTERFAC
 add_library(kwin_lightlyshaders_config MODULE ${kwin_lightlyshaders_config_SOURCES})
 
 target_link_libraries(kwin_lightlyshaders_config
-    KWin::kwin
+    KWinX11::kwin
     Qt6::Widgets
     Qt6::Core
     Qt6::CorePrivate
@@ -27,5 +27,5 @@ target_link_libraries(kwin_lightlyshaders_config
     lshelper
 )
 
-install(TARGETS kwin_lightlyshaders_config DESTINATION ${KDE_INSTALL_PLUGINDIR}/kwin/effects/configs)
+install(TARGETS kwin_lightlyshaders_config DESTINATION ${KDE_INSTALL_PLUGINDIR}/kwin-x11/effects/configs)
 
