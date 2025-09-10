@@ -18,7 +18,7 @@ target_link_libraries(lshelper
     Qt6::Gui
     Qt6::DBus
 
-    KWin::kwin
+    KWinX11::kwin
     epoxy::epoxy
     GL
 
